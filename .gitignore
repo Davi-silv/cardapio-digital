@@ -1,0 +1,24 @@
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Editores
+.idea/
+*.swp
+*.swo
+
+# Fontes GIMP / referências (não vão pro site)
+imagem/
+*.xcf
+
+# Screenshots de layout / referências de design
+assets/layout/
+
+# Ambiente local
+.env
+.env.*
+
+# Dependências (caso adicione no futuro)
+node_modules/

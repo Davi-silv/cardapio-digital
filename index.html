@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#070707" />
+  <meta name="description" content="Cardápio digital Pastel da Casa — pastéis gigantes e crocantes." />
+  <title>Pastel da Casa — Cardápio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#cardapio">Ir ao cardápio</a>
+
+  <header class="site-header" id="topo">
+    <div class="site-header__top">
+      <a class="site-header__brand" href="#topo">Pastel <span>|</span> Da Casa</a>
+      <button class="site-header__tray" type="button" id="tray-toggle" aria-label="Abrir bandeja" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16M6 6l1.2 12.2A2 2 0 0 0 9.2 20h5.6a2 2 0 0 0 2-1.8L18 6M9 6V4h6v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span class="tray-count" id="tray-count" hidden>0</span>
+      </button>
+    </div>
+    <nav class="site-header__nav" aria-label="Categorias">
+      <a href="#salgados">Salgados</a>
+      <a href="#especiais">Especiais</a>
+      <a href="#doces">Doces</a>
+      <a class="site-header__combos" href="#combos">Combos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__media" aria-hidden="true">
+      <img class="hero__img" src="assets/food/hero.jpg" alt="" width="1920" height="1080" />
+      <div class="hero__veil"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Pastéis gigantes e crocantes</p>
+      <h1 class="hero__title">
+        <span class="hero__title-outline">Pastel</span>
+        <span class="hero__title-solid">Da Casa</span>
+      </h1>
+      <p class="hero__divider" aria-hidden="true">◆</p>
+      <p class="hero__lead">Massa artesanal frita na hora. Recheios que transbordam sabor.</p>
+      <a class="hero__cta" href="#cardapio">Explorar os sabores <span aria-hidden="true">▾</span></a>
+    </div>
+  </section>
+
+  <main id="cardapio">
+    <p class="illus-note">Fotos meramente ilustrativas — podem não corresponder exatamente ao produto servido.</p>
+
+    <section class="menu-section" id="salgados">
+      <header class="section-head reveal">
+        <p class="section-head__eyebrow">Clássicos irresistíveis</p>
+        <h2 class="section-head__title">Pastéis Salgados</h2>
+      </header>
+      <div class="menu-grid">
+        <article class="card reveal" data-name="Frango com Requeijão" data-price="21.80">
+          <div class="card__media">
+            <span class="badge badge--popular">Popular</span>
+            <img src="assets/food/s_1.jpg" alt="Pastel de frango com requeijão ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Frango com Requeijão</h3>
+              <span class="card__price">R$&nbsp;21,80</span>
+            </div>
+            <p class="card__desc">Pastel gigante, super recheado com frango desfiado temperado e cremoso requeijão.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Calabresa com Queijo" data-price="21.80">
+          <div class="card__media">
+            <img src="assets/food/s_2.jpg" alt="Pastel de calabresa com queijo ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Calabresa com Queijo</h3>
+              <span class="card__price">R$&nbsp;21,80</span>
+            </div>
+            <p class="card__desc">Pastel gigante recheado com calabresa suculenta, queijo derretido e um toque especial de orégano.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Pastel de Carne" data-price="20.90">
+          <div class="card__media">
+            <img src="assets/food/s_3.jpg" alt="Pastel de carne ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Pastel de Carne</h3>
+              <span class="card__price">R$&nbsp;20,90</span>
+            </div>
+            <p class="card__desc">Pastel gigante, recheado com carne moída bem temperada e suculenta, envolvida em uma massa super crocante.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Pastel de Frango" data-price="20.90">
+          <div class="card__media">
+            <img src="assets/food/s2_1.jpg" alt="Pastel de frango ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Pastel de Frango</h3>
+              <span class="card__price">R$&nbsp;20,90</span>
+            </div>
+            <p class="card__desc">Pastel gigante recheado com frango desfiado bem temperado e suculento.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Queijo com Presunto" data-price="20.90">
+          <div class="card__media">
+            <img src="assets/food/s2_2.jpg" alt="Pastel de queijo com presunto ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Queijo com Presunto</h3>
+              <span class="card__price">R$&nbsp;20,90</span>
+            </div>
+            <p class="card__desc">Massa crocante e douradinha, recheada com muito queijo derretido e presunto suculento.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Pastel de Queijo" data-price="19.90">
+          <div class="card__media">
+            <img src="assets/food/s2_3.jpg" alt="Pastel de queijo ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Pastel de Queijo</h3>
+              <span class="card__price">R$&nbsp;19,90</span>
+            </div>
+            <p class="card__desc">Pastel gigante, recheado com queijo derretido e puxando, dentro de uma massa crocante e dourada.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="especiais">
+      <header class="section-head reveal">
+        <p class="section-head__eyebrow">Com borda recheada</p>
+        <h2 class="section-head__title">Pastéis Especiais</h2>
+      </header>
+      <div class="menu-grid menu-grid--2">
+        <article class="card reveal" data-name="Queijo com Borda de Doce de Leite" data-price="24.80">
+          <div class="card__media">
+            <span class="badge">Especial</span>
+            <img src="assets/food/e_1.jpg" alt="Pastel especial com doce de leite ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Queijo com Borda de Doce de Leite</h3>
+              <span class="card__price">R$&nbsp;24,80</span>
+            </div>
+            <p class="card__desc">Pastel gigante com queijo derretido por dentro e uma borda recheada com doce de leite, criando um contraste perfeito.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Queijo com Borda de Chocolate" data-price="24.80">
+          <div class="card__media">
+            <span class="badge">Especial</span>
+            <img src="assets/food/e_2.jpg" alt="Pastel especial com chocolate ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Queijo com Borda de Chocolate</h3>
+              <span class="card__price">R$&nbsp;24,80</span>
+            </div>
+            <p class="card__desc">Pastel gigante com queijo derretido por dentro e uma borda recheada com chocolate cremoso e derretido.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="doces">
+      <header class="section-head reveal">
+        <p class="section-head__eyebrow">Para adoçar a vida</p>
+        <h2 class="section-head__title">Pastéis Doces</h2>
+      </header>
+      <div class="menu-grid">
+        <article class="card reveal" data-name="Banana com Chocolate" data-price="21.50">
+          <div class="card__media">
+            <img src="assets/food/d_1.jpg" alt="Pastel de banana com chocolate ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Banana com Chocolate</h3>
+              <span class="card__price">R$&nbsp;21,50</span>
+            </div>
+            <p class="card__desc">Pastel gigante recheado com banana macia e doce combinada com chocolate cremoso e derretido.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Banana, Queijo com Açúcar e Canela" data-price="20.90">
+          <div class="card__media">
+            <img src="assets/food/d_2.jpg" alt="Pastel de banana queijo açúcar e canela ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Banana, Queijo com Açúcar e Canela</h3>
+              <span class="card__price">R$&nbsp;20,90</span>
+            </div>
+            <p class="card__desc">Pastel gigante recheado com banana macia e docinha com queijo, finalizado com açúcar e canela.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Romeu e Julieta" data-price="20.50">
+          <div class="card__media">
+            <span class="badge badge--classic">Clássico</span>
+            <img src="assets/food/d_3.jpg" alt="Pastel Romeu e Julieta ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Romeu e Julieta</h3>
+              <span class="card__price">R$&nbsp;20,50</span>
+            </div>
+            <p class="card__desc">Uma combinação clássica que nunca falha! Nosso pastel gigante recheado com queijo derretido e goiabada cascão.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="combos">
+      <header class="section-head reveal">
+        <p class="section-head__eyebrow">Mais sabor, melhor preço</p>
+        <h2 class="section-head__title">Combos &amp; Promos</h2>
+      </header>
+      <div class="menu-grid">
+        <article class="card reveal" data-name="Combo Trio Perfeito" data-price="59.88">
+          <div class="card__media">
+            <span class="badge badge--promo">Promo</span>
+            <img src="assets/food/c_1.jpg" alt="Combo trio ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Combo Trio Perfeito</h3>
+              <span class="card__price">R$&nbsp;59,88</span>
+            </div>
+            <p class="card__desc">Uma seleção imperdível: Pastel de Doce de Leite com Queijo + Pastel de Queijo com Calabresa + Acompanhamento especial.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="O Queijão" data-price="35.90">
+          <div class="card__media">
+            <span class="badge badge--combo">Combo</span>
+            <img src="assets/food/c_2.jpg" alt="Combo O Queijão ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">O Queijão</h3>
+              <span class="card__price">R$&nbsp;35,90</span>
+            </div>
+            <p class="card__desc">Os dois melhores pastéis da casa em um só combo! Crocante por fora e transbordando queijo.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-name="Combo 10 Mini Pastéis" data-price="20.00">
+          <div class="card__media">
+            <span class="badge badge--combo">Combo</span>
+            <img src="assets/food/c_3.jpg" alt="Combo 10 mini pastéis ilustrativo" decoding="async" loading="lazy" width="1200" height="750" />
+          </div>
+          <div class="card__body">
+            <div class="card__row">
+              <h3 class="card__name">Combo 10 Mini Pastéis</h3>
+              <span class="card__price">R$&nbsp;20,00</span>
+            </div>
+            <p class="card__desc">10 pastéis pequenos sortidos nos sabores de: queijo, queijo com presunto, carne, frango e frango com requeijão.</p>
+            <button class="card__btn" type="button">+ Adicionar à bandeja</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__note">Todos os nossos pastéis são fritos na hora com massa artesanal e crocante.</p>
+    <p class="footer__thanks">Obrigado pela preferência!</p>
+    <p class="footer__brand">Pastel | Da Casa</p>
+  </footer>
+
+  <aside class="tray" id="tray" aria-hidden="true" aria-label="Bandeja de pedidos">
+    <div class="tray__panel">
+      <header class="tray__head">
+        <h2>Sua bandeja</h2>
+        <button type="button" class="tray__close" id="tray-close" aria-label="Fechar bandeja">×</button>
+      </header>
+      <ul class="tray__list" id="tray-list"></ul>
+      <p class="tray__empty" id="tray-empty">Nenhum item ainda. Escolha um pastel!</p>
+      <footer class="tray__foot">
+        <div class="tray__total">
+          <span>Total</span>
+          <strong id="tray-total">R$&nbsp;0,00</strong>
+        </div>
+        <button type="button" class="tray__checkout" id="tray-checkout" disabled>Pedir no WhatsApp</button>
+      </footer>
+    </div>
+  </aside>
+  <div class="tray-backdrop" id="tray-backdrop" hidden></div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

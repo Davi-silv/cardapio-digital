@@ -1,111 +1,91 @@
 # Pastel da Casa — Cardápio Digital
 
-Cardápio digital premium para a pastelaria **Pastel da Casa**, com visual escuro (carvão + dourado), bandeja de pedidos e envio direto pelo **WhatsApp**.
+<div align="center">
 
-Ideal para uso via **QR Code** no balcão ou nas mesas.
+### Cardápio responsivo com seleção de itens e pedidos pelo WhatsApp
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![WhatsApp](https://img.shields.io/badge/Pedidos-WhatsApp-25D366?logo=whatsapp&logoColor=white)](https://www.whatsapp.com/)
+
+**[Repositório](https://github.com/Davi-silv/cardapio-digital)** · **[Portfólio do desenvolvedor](https://portifolio-future.vercel.app/)**
+
+</div>
 
 ---
 
-## Demonstração local
+## Sobre o projeto
+
+O **Pastel da Casa** é um cardápio digital desenvolvido com HTML, CSS e JavaScript sem frameworks. A interface apresenta produtos, preços e categorias e permite organizar uma seleção antes de abrir o **WhatsApp com o pedido formatado**.
+
+A solução foi concebida para acesso por celular, inclusive por QR Code em balcões ou mesas.
+
+## Funcionalidades
+
+| Recurso | Descrição |
+| --- | --- |
+| Catálogo | Itens com foto ilustrativa, descrição e preço |
+| Categorias | Salgados, especiais, doces, combos e promoções |
+| Bandeja de pedidos | Adição de itens e ajuste de quantidades |
+| WhatsApp | Composição da mensagem de pedido e abertura da conversa |
+| Responsividade | Layout para celular, tablet e desktop |
+| Animações | Efeitos visuais leves em fotos e elementos da página |
+
+> O projeto **não implementa checkout ou processamento de pagamentos**: a etapa de pedido é direcionada ao WhatsApp.
+
+## Tecnologias
+
+- **HTML5** com estrutura semântica;
+- **CSS3**, Grid, Flexbox e unidades responsivas;
+- **JavaScript ES6+** sem frameworks;
+- Integração por link `wa.me`;
+- Fontes **Cormorant Garamond** e **DM Sans**.
+
+## Estrutura
+
+```text
+index.html       # Estrutura e cards do cardápio
+css/styles.css   # Estilos e responsividade
+js/main.js       # Bandeja, WhatsApp e animações
+assets/food/     # Imagens dos produtos
+docs/GUIA.md     # Orientações de configuração e publicação
+docs/CARDAPIO.md # Referência de itens e preços
+```
+
+## Executar localmente
+
+Não requer instalação de dependências nem etapa de build.
 
 ```bash
+git clone https://github.com/Davi-silv/cardapio-digital.git
 cd cardapio-digital
 python3 -m http.server 5570
 ```
 
-Abra: [http://127.0.0.1:5570](http://127.0.0.1:5570)
+Abra **http://127.0.0.1:5570**. Também é possível utilizar a extensão Live Server.
 
-Ou use a extensão **Live Server / Go Live** no Cursor (porta configurada: `5570`).
+## Personalização
 
----
+| Item | Arquivo |
+| --- | --- |
+| Produtos e preços | `index.html` |
+| Número de WhatsApp | `js/main.js` — constante `WHATSAPP_NUMBER` |
+| Paleta e fontes | `css/styles.css` |
+| Fotos | `assets/food/` |
 
-## Funcionalidades
+Para instruções detalhadas, consulte o [guia do projeto](docs/GUIA.md) e a [lista do cardápio](docs/CARDAPIO.md).
 
-- Hero full-screen com marca e CTA
-- Categorias: Salgados, Especiais, Doces, Combos & Promos
-- Cards com foto ilustrativa, descrição e preço
-- Bandeja lateral (adicionar / alterar quantidade)
-- Pedido enviado ao WhatsApp **(22) 99848-0314**
-- Layout responsivo (celular, tablet e desktop)
-- Animações leves (Ken Burns, scroll reveal, zoom nas fotos)
-- Aviso de fotos meramente ilustrativas
+## Publicação
 
----
+Por ser um site estático, pode ser hospedado em serviços de publicação de arquivos HTML/CSS/JS, como GitHub Pages, Vercel ou Netlify. Após o deploy, um QR Code pode direcionar ao endereço publicado.
 
-## Estrutura do projeto
+## Autoria
 
-```text
-cardapio-digital/
-├── index.html          # Página principal
-├── css/
-│   └── styles.css      # Estilos e responsividade
-├── js/
-│   └── main.js         # Bandeja, WhatsApp, animações
-├── assets/
-│   └── food/           # Imagens do hero e dos itens
-├── docs/
-│   ├── GUIA.md         # Guia completo (edição, deploy, WhatsApp)
-│   └── CARDAPIO.md     # Lista de itens e preços
-├── README.md
-└── .vscode/
-    └── settings.json   # Configuração do Live Server
-```
+Projeto **Pastel da Casa** desenvolvido por **Davi Barbosa da Silva**, fundador da **Evolutiva Tech**.
+
+[GitHub](https://github.com/Davi-silv) · [Portfólio](https://portifolio-future.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/davi-barbosa-silva/)
 
 ---
 
-## Tecnologias
-
-| Camada     | Stack                          |
-|------------|--------------------------------|
-| Marcação   | HTML5 semântico                |
-| Estilo     | CSS3 (Grid, Flexbox, clamp)    |
-| Script     | JavaScript (vanilla, ES6+)     |
-| Fontes     | Cormorant Garamond + DM Sans   |
-| Pedidos    | WhatsApp (`wa.me`)             |
-
-Sem build step, sem framework — basta hospedar os arquivos estáticos.
-
----
-
-## WhatsApp
-
-Número configurado em `js/main.js`:
-
-```js
-const WHATSAPP_NUMBER = "5522998480314"; // (22) 99848-0314
-```
-
-Ao clicar em **Pedir no WhatsApp**, o cliente abre uma conversa com o pedido formatado.
-
----
-
-## Personalização rápida
-
-| O quê              | Onde                          |
-|--------------------|-------------------------------|
-| Itens e preços     | `index.html` (cards)          |
-| Número WhatsApp    | `js/main.js` → `WHATSAPP_NUMBER` |
-| Cores / tipografia | `css/styles.css` → `:root`    |
-| Fotos              | `assets/food/`                |
-
-Documentação detalhada: [`docs/GUIA.md`](docs/GUIA.md)
-
----
-
-## Hospedagem
-
-Qualquer host de arquivos estáticos funciona, por exemplo:
-
-- Netlify / Vercel / Cloudflare Pages
-- GitHub Pages
-- Hospedagem compartilhada (upload via FTP)
-
-Depois de publicar, gere um QR Code apontando para a URL pública.
-
----
-
-## Licença / uso
-
-Projeto desenvolvido para o cliente **Pastel da Casa**.  
-As fotos dos produtos são **meramente ilustrativas**.
-# cardapio-digital
+<sub>As imagens de produtos apresentadas no projeto são ilustrativas.</sub>
